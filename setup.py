@@ -18,7 +18,7 @@ gh_repo = 'https://github.com/weaming/fuck-python-str'
 setup(
     name='fuck-python-str',  # Required
 
-    version='0.1.0',  # Required
+    version='0.1.1',  # Required
 
     # This is a one-line description or tagline of what your project does.
     description='helper to make compatible string in python2 and python3',  # Required

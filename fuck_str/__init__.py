@@ -5,11 +5,7 @@ python3 bytes      str
 """
 import sys
 
-if sys.version_info[0] < 3:
-    is_py2 = True
-else:
-    is_py2 = False
-
+is_py2 = sys.version_info[0] == 2
 is_py3 = not is_py2
 
 
@@ -56,7 +52,7 @@ def is_unicode(x):
 
 def ensure_unicode(x):
     if is_unicode(x):
-        return True
+        return x
 
     ensure_str_like(x)
     return x.decode("utf-8")
